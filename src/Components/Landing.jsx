@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom';
 const Landing = () => {
   const myNav = useNavigate();
   const handleBox =(a)=>{
-      if(localStorage.getItem("email")==null){
-              myNav("/login")
-      }
-      else{
+      // if(localStorage.getItem("email")==null){
+      //         myNav("/login")
+      // }
+      // else{
         if(a==1){
           window.open('https://en.wikipedia.org/wiki/Culture_of_India', '_blank');
         }
@@ -21,7 +21,7 @@ const Landing = () => {
         else if(a==4){
           myNav('/logined/maps')
         }
-      }
+      // }
   }
   return (
       
