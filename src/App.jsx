@@ -12,7 +12,6 @@ const App = () => {
     return (
         <>
             <BrowserRouter>
-            
                 <Routes>
                     <Route path='/' element={<LandingLayout/>}>
                         <Route index element={<Landing/>}/>
@@ -25,14 +24,10 @@ const App = () => {
                         <Route index element={<Landing/>}/>
                         <Route path='/logined/home' element={<Landing/>}/>
                         <Route path='/logined/maps' element={<MapComponent/>}/>
-
                     </Route>
-                   
                 </Routes>
             </BrowserRouter>
-           
         </>
     );
 };
-
-export default App;
+export default App; 
